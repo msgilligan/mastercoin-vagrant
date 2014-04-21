@@ -1,6 +1,6 @@
 = Mastercoin Tools Component Version Tracking 
 
-This document is for tracking the versions of system components used in the [https://github.com/msgilligan/mastercoin-vagrant]Vagrant install of Mastercoin Tools.
+This document is for tracking the versions of system components used in the https://github.com/msgilligan/mastercoin-vagrant[Vagrant install] of Mastercoin Tools.
 
 [options="header",frame="all"]
 |===
