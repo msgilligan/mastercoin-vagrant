@@ -3,12 +3,9 @@ OBELISK_SERVER="tcp://obelisk.bysh.me:9091"
 echo "Installing Git..."
 apt-get -y install git
 echo "Cloning install-msc.git..."
-sudo -H -u vagrant git clone https://github.com/msgilligan/install-msc.git
-echo "cd install-msc..."
+sudo -H -u vagrant git clone https://github.com/mastercoin-MSC/install-msc.git
 cd install-msc
-echo "Checking out msgilligan-vagrant branch"
-sudo -H -u vagrant git checkout msgilligan-vagrant
-echo "Running install-msc.sh"
+echo "Running install-msc.sh..."
 bash install-msc.sh -auto $OBELISK_SERVER
 
 
