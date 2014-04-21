@@ -26,19 +26,26 @@ The Vagrantfile is currently using (*trusting*) the [parallels/ubuntu-13.10](htt
 Instructions
 ------------
 
-1. Install VirtualBox
-1. Install Vagrant
+1. [Install VirtualBox](https://www.virtualbox.org/manual/ch02.html)
+1. [Install Vagrant](http://docs.vagrantup.com/v2/installation/)
 1. Clone this repository
 
-    git clone git@github.com:msgilligan/mastercoin-vagrant.git
+        git clone git@github.com:msgilligan/mastercoin-vagrant.git
 
 1. Run Vagrant
 
-    cd mastercoin-vagrant
-    vagrant up
+        cd mastercoin-vagrant
+        vagrant up
+
+1. Connect to VirtualBox VM
+
+        vagrant ssh
+
+1. Follow the instructions in the [Running](http://mastercoin-tools-installer.readthedocs.org/en/latest/pages/running.html) section of the install-msc documentation.
 
 To Do
 -----
+1. Find the proper repo on Github to host Mastercoin Vagrant files
 1. Better documentation
 1. Track versions of all components used and update to released/stable versions asap.
 1. Create a verified/trusted Mastercoin "base box"
@@ -50,9 +57,4 @@ To Do
 Versions, tags, and hashes
 --------------------------
 
-I would like to see a 100% reproducible build/install. In order to do this all critical components should be versioned or tagged.
-
-Currently the following components and versions are used:
-
-
-
+I would like to see a 100% reproducible build/install. In order to do this all critical components should be versioned or tagged. I'm tracking versions of components in an AsciiDoc table named [versions.adoc](versions.adoc).
