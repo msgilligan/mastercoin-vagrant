@@ -50,6 +50,7 @@ To Do
 1. Track versions of all components used and update to released/stable versions asap.
 1. Create a verified/trusted Mastercoin "base box"
 1. Vagrant file support for Omniwallet
+1. Add [Shared folders and port-forwarding](http://pastie.org/9083315)
 1. Vagrant file support for an Obelisk VM
 
 
