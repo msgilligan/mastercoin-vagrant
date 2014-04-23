@@ -87,6 +87,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 #    s.args = [$obeliskServerUrl]
   end
 
+  config.vm.provision "shell" do |s|
+    s.privileged = false
+    s.path = "install-mastercoin-tools-vagrant.sh"
+  end
+
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
   # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
