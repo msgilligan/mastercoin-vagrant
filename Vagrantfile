@@ -9,15 +9,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "parallels/ubuntu-13.10"
 
+  config.vm.define "tools" do |tools|
+      config.vm.provision "shell" do |s|
+        s.path = "install-mastercoin-tools-auto.sh"
+    #    s.args = [$obeliskServerUrl]
+      end
 
-  config.vm.provision "shell" do |s|
-    s.path = "install-mastercoin-tools-auto.sh"
-#    s.args = [$obeliskServerUrl]
-  end
-
-  config.vm.provision "shell" do |s|
-    s.privileged = false
-    s.path = "install-mastercoin-tools-vagrant.sh"
+      config.vm.provision "shell" do |s|
+        s.privileged = false
+        s.path = "install-mastercoin-tools-vagrant.sh"
+      end
   end
 
 end
