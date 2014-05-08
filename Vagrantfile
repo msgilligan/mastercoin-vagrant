@@ -11,13 +11,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "tools" do |tools|
       config.vm.provision "shell" do |s|
-        s.path = "install-mastercoin-tools-auto.sh"
+        s.path = "install-mastercoin-tools-root.sh"
     #    s.args = [$obeliskServerUrl]
       end
 
       config.vm.provision "shell" do |s|
         s.privileged = false
-        s.path = "install-mastercoin-tools-vagrant.sh"
+        s.path = "install-mastercoin-tools-user.sh"
       end
   end
 
