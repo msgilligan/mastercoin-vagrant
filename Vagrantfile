@@ -35,6 +35,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 # Configuration for a base Ubuntu VM for Mastercoin Tools
 #
   config.vm.define "tools" do |tools|
+
+      tools.vm.provider "virtualbox" do |v|
+        v.memory = 1024
+        v.cpus = 2
+      end
+
       tools.vm.provision "shell" do |s|
         s.path = "install-mastercoin-tools-root.sh"
     #    s.args = [$obeliskServerUrl]
