@@ -12,9 +12,9 @@ This document is for tracking the versions of system components used in the http
 | pycoin | pip.packages | PIP | 0.25 | 
 | pybitcointools | pip.packages | PIP| 1.1 | 
 | More Ubuntu packages | install-sx.sh | apt-get | default/latest | Defaulting to latest version probably OK for most packages.
-| libbitcoin | install-sx.sh | git ref | ebadde8 | Wait for tagged/stable version of SX toolchain?
-| libwallet | install-sx.sh | git ref | 9be05b6 | ""
-| obelisk | install-sx.sh | git ref | 4962e2c | ""
-| sx | install-sx.sh | git ref | d9b566e | ""
+| libbitcoin | install-sx.sh | git ref | 7de56a8fb4e562cbcb030789a8221f69a73c4c7f | Wait for tagged/stable version of SX toolchain?
+| libwallet | install-sx.sh | git ref | 5a01940e282e94279403b7db211148fb49aac7ce | ""
+| obelisk | install-sx.sh | git ref | afbdc51835d0d480a1f61eba5b161f5ba53c1fc4 | ""
+| sx | install-sx.sh | git ref | 5f05b309b0cdd91f6e1021eb5130cae5f2effa8b | ""
 | mastercoin-tools | install-msc.sh  | git ref | default branch | Create tag after more testing
 |===
