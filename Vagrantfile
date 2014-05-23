@@ -63,6 +63,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.memory = 2048
         v.cpus = 4
       end
+
+      bitcoind.vm.provision "shell" do |s|
+        s.privileged = false
+        s.path = "clone-and-build-bitcoind.sh"
+        s.args = ["https://github.com/msgilligan/bitcoin.git", "omniwallet-master", "bitcoin"]
+      end
+
   end
 
 end
